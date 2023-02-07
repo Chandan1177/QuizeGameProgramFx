@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizegamefx.HelloController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #7A264D; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pngwing.com.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin></ImageView>
+                        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Name" textFill="WHITE" />
+                              <Label layoutX="38.0" layoutY="42.0" text="phone" textFill="WHITE" />
+                              <Label layoutX="38.0" layoutY="50.0" prefHeight="12.0" prefWidth="29.0" text="email" textFill="WHITE" />
+                           </children>
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane prefHeight="77.0" prefWidth="200.0" style="-fx-background-color: white;" />
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="120.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #7B4D93;">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@dashboard-icon-23685.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin></ImageView>
+                        <Label text="Dashbord" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="260.0" onMouseClicked="#onResult" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #7B4D93;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pngegg (1).png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin></ImageView>
+                        <Label text="Results" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: #7B4D93;" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <Pane prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #291931;" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #988C94;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: gray;" />
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="91.0" text="Quick Pick" textFill="#e1e1e1">
+                           <font>
+                              <Font name="MV Boli" size="14.0" />
+                           </font>
+                        </Label>
+                        <Separator prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="160.0" prefWidth="400.0">
+                     <children>
+                        <Pane fx:id="java" onMouseClicked="#onJavaClicked" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="89.0" fitWidth="57.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@java.png" />
+                                 </image></ImageView>
+                              <Label layoutX="22.0" layoutY="82.0" text="Java" textFill="#8d6161" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="133.0" prefWidth="111.0" HBox.hgrow="ALWAYS" />
+                        <Pane layoutX="60.0" layoutY="20.0" onMouseClicked="#onDbClicked" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="89.0" fitWidth="57.0" layoutX="5.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@db.png" />
+                                 </image></ImageView>
+                              <Label fx:id="db" layoutX="11.0" layoutY="82.0" text="Database" textFill="#8d6161" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="123.0" layoutY="10.0" prefHeight="133.0" prefWidth="94.0" HBox.hgrow="ALWAYS" />
+                        <Pane layoutX="220.0" layoutY="10.0" onMouseClicked="#onNetworkingClicked" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="20.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="89.0" fitWidth="57.0" layoutX="5.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@net.png" />
+                                 </image></ImageView>
+                              <Label fx:id="net" layoutX="3.0" layoutY="82.0" text="Networking" textFill="#8d6161" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="100.0" prefHeight="40.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="91.0" text="User Define" textFill="#e1e1e1">
+                           <font>
+                              <Font name="MV Boli" size="14.0" />
+                           </font>
+                        </Label>
+                        <Separator prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <FlowPane prefHeight="178.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="110.0" prefWidth="70.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                           <FlowPane.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </FlowPane.margin>
+                           <children>
+                              <ImageView fx:id="custom" fitHeight="89.0" fitWidth="57.0" layoutX="7.0" onMouseClicked="#onCustomClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pngimg.com - plus_PNG106.png" />
+                                 </image></ImageView>
+                              <Label layoutX="15.0" layoutY="79.0" text="Custom" textFill="#8d6161" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </FlowPane>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <Separator prefHeight="29.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <Separator orientation="VERTICAL" prefHeight="341.0" prefWidth="21.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

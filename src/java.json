@@ -1,0 +1,12 @@
+[
+  {"ind": 1,"q":"What is a valid use of the hashCode() method?","a": "encrypting user passwords","b": "deciding if two instances of a class are equal","c": "enabling HashMap to find matches faster","d": "moving objects from a List to a HashMap","ans": "deciding if two instances of a class are equal","time": 20},
+  {"ind": 2,"q":"How would you convert a String to an Int?","a": "\"21\".intValue()","b": "String.toInt(\"21\")","c": "Integer.parseInt(\"21\")","d": "String.valueOf(\"21\")","ans": "Integer.parseInt(\"21\")","time": 20},
+  {"ind": 3,"q":"What kind of relationship does \"extends\" denote?","a": "uses-a","b": "is-a","c": "has-a","d": "was-a","ans": "is-a","time": 20},
+  {"ind": 4,"q":"What type of variable can be assigned to only once?","a": "private","b": "non-static","c": "final","d": "static","ans": "final","time": "20"},
+  {"ind": 5,"q":"Declare a variable that holds the first four digits of Π","a": "int pi = 3.141;","b": "decimal pi = 3.141;","c": "double pi = 3.141;","d": "float pi = 3.141;","ans": "double pi = 3.141;","time": 20},
+  {"ind": 6,"q":"Which keyword lets you use an interface?","a": "extends","b": "implements","c": "inherits","d": "import","ans": "implements","time": "20"},
+  {"ind": 7,"q":"Which access modifier makes variables and methods visible only in the class where they are declared?","a": "public","b": "protected","c": "nonmodifier","d": "private","ans": "private","time": 30},
+  {"ind": 8,"q":"What is not a java keyword","a": "finally","b": "native","c": "interface","d": "unsigned","ans": "unsigned","time": 25},
+  {"ind": 9,"q":"Which keyword lets you call the constructor of a parent class?","a": "parent","b": "super","c": "this","d": "new","ans": "super","time": 20},
+  {"ind": 10,"q":"Which choice is a disadvantage of inheritance?","a": "Overridden methods of the parent class cannot be reused.","b": "Responsibilities are not evenly distributed between parent and child classes.","c": "Classes related by inheritance are tightly coupled to each other.","d": "The internal state of the parent class is accessible to its children.","ans": "Classes related by inheritance are tightly coupled to each other.","time": 30}
+]
